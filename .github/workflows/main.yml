@@ -16,4 +16,4 @@ jobs:
           heroku_app_name: 'app-dashboard-server'
           heroku_email: 'andrewmagdygad@gmail.com'
           usedocker: true
-          healthcheck: 'https://app-dashboard-server.herokuapp.com/health'
+          healthcheck: 'https://app-dashboard-server.herokuapp.com'
