@@ -14,4 +14,5 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: 'app-dashboard-server'
+          heroku_email: 'andrewmagdygad@gmail.com'
           usedocker: true
