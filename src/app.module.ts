@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { DataModule } from './Data/module';
+import { HealthcheckController } from './Healthcheck/healthcheck.controller';
 
 @Module({
   imports: [
@@ -12,5 +13,6 @@ import { DataModule } from './Data/module';
     }),
     DataModule,
   ],
+  controllers: [HealthcheckController],
 })
 export class AppModule {}

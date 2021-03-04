@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { DataController } from './Data/controller';
-import { DataService } from './Data/service';
-import { DataSchema } from './Data/schema';
+import { DataController } from './controller';
+import { DataService } from './service';
+import { DataSchema } from './schema';
 import * as request from 'supertest';
-import { closeInMongodConnection, rootMongooseTestModule } from './test-utils';
+import { closeInMongodConnection, rootMongooseTestModule } from '../test-utils';
 import { MongooseModule } from '@nestjs/mongoose';
 import { HttpStatus, INestApplication } from '@nestjs/common';
 
